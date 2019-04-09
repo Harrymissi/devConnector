@@ -5,7 +5,7 @@ import * as actionTypes from './types';
 // Get Current Profile
 export const getCurrentProfile = () => dispatch => {
     dispatch(setProfileLoading());
-    axios.get('peaceful-gorge-45148.herokuapp.com/api/profile')
+    axios.get('https://peaceful-gorge-45148.herokuapp.com/api/profile')
         .then(res =>
             dispatch({
                 type: actionTypes.GET_PROFILE,
@@ -20,7 +20,7 @@ export const getCurrentProfile = () => dispatch => {
 
 // Create Profile
 export const createProfile = (profileData, history) => dispatch => {
-    axios.post('peaceful-gorge-45148.herokuapp.com/api/profile', profileData)
+    axios.post('https://peaceful-gorge-45148.herokuapp.com/api/profile', profileData)
         .then(res => history.push('/dashboard'))
         .catch(err => {
             //console.log(err.response.data);
@@ -33,7 +33,7 @@ export const createProfile = (profileData, history) => dispatch => {
 // Delete account & profile
 export const deleteAccount = () => dispatch => {
     if (window.confirm('Are you sure? This can NOT be undone!')) {
-        axios.delete('peaceful-gorge-45148.herokuapp.com/api/profile')
+        axios.delete('https://peaceful-gorge-45148.herokuapp.com/api/profile')
             .then(res => dispatch({
                 type: actionTypes.SET_CURRENT_USER,
                 payload: {}
@@ -61,7 +61,7 @@ export const clearCurrentProfile = () => {
 
 // Add Experience
 export const addExperience = (expData, history) => dispatch => {
-    axios.post('peaceful-gorge-45148.herokuapp.com/api/profile/experience', expData)
+    axios.post('https://peaceful-gorge-45148.herokuapp.com/api/profile/experience', expData)
         .then(res => {
             console.log(res.data);
             history.push('/dashboard')
@@ -75,7 +75,7 @@ export const addExperience = (expData, history) => dispatch => {
 
 // Delete Experience
 export const deleteExperience = (id) => dispatch => {
-    axios.delete(`peaceful-gorge-45148.herokuapp.com/api/profile/experience/${id}`)
+    axios.delete(`https://peaceful-gorge-45148.herokuapp.com/api/profile/experience/${id}`)
         .then(res => dispatch({
             type: actionTypes.GET_PROFILE,
             payload: res.data
@@ -89,7 +89,7 @@ export const deleteExperience = (id) => dispatch => {
 
 // Add Education
 export const addEducation = (eduData, history) => dispatch => {
-    axios.post('peaceful-gorge-45148.herokuapp.com/api/profile/education', eduData)
+    axios.post('https://peaceful-gorge-45148.herokuapp.com/api/profile/education', eduData)
         .then(res => history.push('/dashboard'))
         .catch(err =>
             dispatch({
@@ -100,7 +100,7 @@ export const addEducation = (eduData, history) => dispatch => {
 
 // Delete Education
 export const deleteEducation = (id) => dispatch => {
-    axios.delete(`peaceful-gorge-45148.herokuapp.com/api/profile/education/${id}`)
+    axios.delete(`https://peaceful-gorge-45148.herokuapp.com/api/profile/education/${id}`)
         .then(res => dispatch({
             type: actionTypes.GET_PROFILE,
             payload: res.data
@@ -115,7 +115,7 @@ export const deleteEducation = (id) => dispatch => {
 // Get All Profiles
 export const getAllProfile = () => dispatch => {
     dispatch(setProfileLoading());
-    axios.get('peaceful-gorge-45148.herokuapp.com/api/profile/all')
+    axios.get('https://peaceful-gorge-45148.herokuapp.com/api/profile/all')
         .then(res =>
             dispatch({
                 type: actionTypes.GET_PROFILES,
@@ -131,7 +131,7 @@ export const getAllProfile = () => dispatch => {
 // Get All Profiles by Handle
 export const getProfileByHandle = (handle) => dispatch => {
     dispatch(setProfileLoading());
-    axios.get(`peaceful-gorge-45148.herokuapp.com/api/profile/handle/${handle}`)
+    axios.get(`https://peaceful-gorge-45148.herokuapp.com/api/profile/handle/${handle}`)
         .then(res =>
             dispatch({
                 type: actionTypes.GET_PROFILE,

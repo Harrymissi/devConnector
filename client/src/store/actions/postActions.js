@@ -5,7 +5,7 @@ import axios from 'axios';
 export const addPost = postData => dispatch => {
     dispatch(clearErrors());
     dispatch(clearErrors());
-    axios.post('peaceful-gorge-45148.herokuapp.com/api/posts', postData)
+    axios.post('https://peaceful-gorge-45148.herokuapp.com/api/posts', postData)
         .then(res => dispatch({
             type: actionTypes.ADD_POST,
             payload: res.data
@@ -19,7 +19,7 @@ export const addPost = postData => dispatch => {
 // Get Post
 export const getPost = () => dispatch => {
     dispatch(setPostLoading());
-    axios.get('peaceful-gorge-45148.herokuapp.com/api/posts')
+    axios.get('https://peaceful-gorge-45148.herokuapp.com/api/posts')
         .then(res => dispatch({
             type: actionTypes.GET_POSTS,
             payload: res.data
@@ -33,7 +33,7 @@ export const getPost = () => dispatch => {
 // Get Post by ID
 export const getPostById = (id) => dispatch => {
     dispatch(setPostLoading());
-    axios.get(`peaceful-gorge-45148.herokuapp.com/posts/${id}`)
+    axios.get(`https://peaceful-gorge-45148.herokuapp.com/posts/${id}`)
         .then(res => dispatch({
             type: actionTypes.GET_POST,
             payload: res.data
@@ -59,7 +59,7 @@ export const clearErrors = () => {
 };
 // Delete Post
 export const deletePost = id => dispatch => {
-    axios.delete(`peaceful-gorge-45148.herokuapp.com/api/posts/${id}`)
+    axios.delete(`https://peaceful-gorge-45148.herokuapp.com/api/posts/${id}`)
         .then(res => dispatch({
             type: actionTypes.DELETE_POST,
             payload: id
@@ -72,7 +72,7 @@ export const deletePost = id => dispatch => {
 
 // Add like: It actually adds the users into likes array
 export const addLike = id => dispatch => {
-    axios.post(`peaceful-gorge-45148.herokuapp.com/api/posts/like/${id}`)
+    axios.post(`https://peaceful-gorge-45148.herokuapp.com/api/posts/like/${id}`)
         .then(res => dispatch(getPost()))
         .catch(err => dispatch({
             type: actionTypes.GET_ERRORS,
@@ -82,7 +82,7 @@ export const addLike = id => dispatch => {
 
 // Remove like
 export const removeLike = id => dispatch => {
-    axios.post(`peaceful-gorge-45148.herokuapp.com/posts/unlike/${id}`)
+    axios.post(`https://peaceful-gorge-45148.herokuapp.com/posts/unlike/${id}`)
         .then(res => dispatch(getPost()))
             .catch(err => dispatch({
                 type: actionTypes.GET_ERRORS,
@@ -93,7 +93,7 @@ export const removeLike = id => dispatch => {
 // Add Comment
 export const addComment = (postId, commentData) => dispatch => {
     dispatch(clearErrors());
-    axios.post(`peaceful-gorge-45148.herokuapp.com/posts/comment/${postId}`, commentData)
+    axios.post(`https://peaceful-gorge-45148.herokuapp.com/posts/comment/${postId}`, commentData)
         .then(res => dispatch({
             type: actionTypes.GET_POST,
             payload: res.data
@@ -106,7 +106,7 @@ export const addComment = (postId, commentData) => dispatch => {
 
 // Delete Comment
 export const deleteComment = (postId, commentId) => dispatch => {
-    axios.delete(`peaceful-gorge-45148.herokuapp.com/api/posts/comment/${postId}/${commentId}`)
+    axios.delete(`https://peaceful-gorge-45148.herokuapp.com/api/posts/comment/${postId}/${commentId}`)
         .then(res => dispatch({
             type: actionTypes.GET_POST,
             payload: res.data

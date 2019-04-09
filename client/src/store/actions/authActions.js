@@ -16,7 +16,7 @@ export const registerUser = (userData, history) => dispatch => {
 
 // Login  - Get User Token
 export const loginUser = (userData) => dispatch => {
-    axios.post('peaceful-gorge-45148.herokuapp.com/api/users/login', userData)
+    axios.post('https://peaceful-gorge-45148.herokuapp.com/api/users/login', userData)
         .then(res => {
             // Save to localStorage
             const token = res.data.token;
