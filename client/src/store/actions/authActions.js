@@ -6,7 +6,7 @@ import jwtDecode from 'jwt-decode';
 
 //  Register User
 export const registerUser = (userData, history) => dispatch => {
-    axios.post('peaceful-gorge-45148.herokuapp.com/api/users/register', userData)
+    axios.post('https://peaceful-gorge-45148.herokuapp.com/api/users/register', userData)
         .then(res => history.push('/login'))
         .catch(err => dispatch({
             type: actionTypes.GET_ERRORS,
