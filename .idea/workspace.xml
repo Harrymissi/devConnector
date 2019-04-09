@@ -1,80 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8784e06f-7800-4c75-8cdc-2c5f4849ee7e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/auth/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/auth/Register.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/common/InputGroup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/common/PrivateRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/common/SelectListGroup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/common/Spinner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/common/TextAreaFieldGroup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/common/TextFileldGroup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/AddEducation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/AddExperience.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/CreateProfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/EditProfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/Education.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/Experience.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/dashboard/ProfileAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/layout/Footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/layout/Landing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/layout/Navbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/not_found/NotFound.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/post/CommentFeed.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/post/CommentForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/post/CommentItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/post/Post.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/posts/PostFeed.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/posts/PostForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/posts/PostItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/posts/Posts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile/Profile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile/ProfileAbout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile/ProfileCreds.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile/ProfileGithub.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/profile/ProfileHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/profiles/ProfileItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/profiles/Profiles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/img/showcase.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/img/spinner.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/store/actions/authActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/store/actions/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/store/actions/postActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/store/actions/profileActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/store/actions/types.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/store/reducers/authReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/store/reducers/errorReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/store/reducers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/store/reducers/postReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/store/reducers/profileReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/store/store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/utils/isEmpty.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/utils/setAuthToken.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/keys_dev.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/keys_prod.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/passport.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/Post.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/Profile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/validation/education.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/validation/experience.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/validation/isEmpty.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/validation/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/validation/post.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/validation/profile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/validation/register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/keys.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/keys.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/posts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-    </list>
+    <list default="true" id="8784e06f-7800-4c75-8cdc-2c5f4849ee7e" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -219,7 +146,7 @@
             <path>
               <item name="FullStack" type="b2602c69:ProjectViewProjectNode" />
               <item name="FullStack" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FullStack" type="b2602c69:ProjectViewProjectNode" />
@@ -297,12 +224,12 @@
       <workItem from="1554489425350" duration="23692000" />
       <workItem from="1554570077822" duration="28527000" />
       <workItem from="1554663209524" duration="18870000" />
-      <workItem from="1554731959883" duration="19013000" />
+      <workItem from="1554731959883" duration="19259000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129317000" />
+    <option name="totallyTimeSpent" value="129563000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -315,9 +242,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2538004" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2538004" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32909605" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -325,7 +251,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32909605" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.33050847" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.33050847" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997175" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
