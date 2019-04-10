@@ -33,7 +33,7 @@ export const getPost = () => dispatch => {
 // Get Post by ID
 export const getPostById = (id) => dispatch => {
     dispatch(setPostLoading());
-    axios.get(`https://peaceful-gorge-45148.herokuapp.com/posts/${id}`)
+    axios.get(`https://peaceful-gorge-45148.herokuapp.com/api/posts/${id}`)
         .then(res => dispatch({
             type: actionTypes.GET_POST,
             payload: res.data
@@ -82,7 +82,7 @@ export const addLike = id => dispatch => {
 
 // Remove like
 export const removeLike = id => dispatch => {
-    axios.post(`https://peaceful-gorge-45148.herokuapp.com/posts/unlike/${id}`)
+    axios.post(`https://peaceful-gorge-45148.herokuapp.com/api/posts/unlike/${id}`)
         .then(res => dispatch(getPost()))
             .catch(err => dispatch({
                 type: actionTypes.GET_ERRORS,
@@ -93,7 +93,7 @@ export const removeLike = id => dispatch => {
 // Add Comment
 export const addComment = (postId, commentData) => dispatch => {
     dispatch(clearErrors());
-    axios.post(`https://peaceful-gorge-45148.herokuapp.com/posts/comment/${postId}`, commentData)
+    axios.post(`https://peaceful-gorge-45148.herokuapp.com/api/posts/comment/${postId}`, commentData)
         .then(res => dispatch({
             type: actionTypes.GET_POST,
             payload: res.data
