@@ -93,7 +93,7 @@ export const removeLike = id => dispatch => {
 // Add Comment
 export const addComment = (postId, commentData) => dispatch => {
     dispatch(clearErrors());
-    axios.post(`https://peaceful-gorge-45148.herokuapp.com/api/posts/comment/${postId}`, commentData)
+    axios.post(`https://peaceful-gorge-45148.herokuapp.com/api/ posts/comment/${postId}`, commentData)
         .then(res => dispatch({
             type: actionTypes.GET_POST,
             payload: res.data

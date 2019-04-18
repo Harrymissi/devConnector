@@ -1,3 +1,10 @@
+/**
+ *   Actually, Passport recognizes that each application has unique authentication requirements.
+ *   Authentication mechanisms, known as strategies, are packaged as individual modules.
+ *   Applications can choose which strategies to employ, without creating unnecessary dependencies.
+ * @type {JwtStrategy}
+ */
+
 const JwtStratege = require('passport-jwt').Strategy;
 const ExtractJwt = require('passport-jwt').ExtractJwt;
 const mongoose = require('mongoose');
